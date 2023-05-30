@@ -134,7 +134,9 @@ class ProjectController extends Controller
                 Storage::delete($project->link_image);
             }
 
+
             $path = Storage::put('project_images', $request->link_image);
+
 
             $formData['link_image'] = $path;
         }
